@@ -32,17 +32,17 @@ const initDB = async() => {
   const totalUsers = await knex('users').select(knex.raw('count(*) as total'))
   if (totalUsers[0].total === 0) {
     await knex.insert({
-      name: 'Tulio Faria',
-      email: 'tuliofaria@devpleno.com',
-      passwd: 'abc123',
+      name: 'Admin',
+      email: 'admin@email.com',
+      passwd: 'admin',
       role: 'admin',
       unit: 'metric',
       timezone: 'America/Sao_Paulo'
     }).into('users')
     await knex.insert({
-      name: 'Zé da Silva',
-      email: 'ze@dominio.com',
-      passwd: 'abc123',
+      name: 'User',
+      email: 'user@email.com',
+      passwd: 'user',
       role: 'user',
       unit: 'metric',
       timezone: 'America/Sao_Paulo'
