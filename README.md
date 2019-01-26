@@ -27,7 +27,7 @@ Gets a new Token/JWT for the required user.
 
 ```
 {
-	"email": "tuliofaria@gmail.com",
+	"email": "user@email.com",
 	"passwd": "123456"
 }
 ```
@@ -42,8 +42,8 @@ This endpoint can be used to sign-up and for admin. If a new user is trying to c
 
 ```
 {
-	"name": "Tulio Faria",
-	"email": "tuliofaria@gmail.com",
+	"name": "User",
+	"email": "user@email.com",
 	"passwd": "123456",
 	"role": "admin",
 	"unit": "metric",
